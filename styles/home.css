@@ -1,0 +1,234 @@
+main{
+  min-height: 100vh;
+  width: 100vw;
+}
+.start{
+  height: 100vh;
+  width: 100vw;
+  padding: 14.4vh 7.81vw;
+  position: relative;
+}
+
+.left{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 3;
+  transform: translateY(-50%);
+}
+
+ .right{
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  right: 0;
+  top: 0;
+}
+
+.left img{
+  aspect-ratio: 984/411;
+  width: 51.2vw;
+}
+
+.left p{
+  width: 35.4vw;
+  margin: 5.1vh 0 10.3vh;
+}
+
+#buyBtn{
+  color: #EAD512;
+  background-color: #030E1F;
+  font-weight: 700;
+  padding: 2.57vh 1.5vw;
+  border-radius: 10px;
+  border: 2px solid #030E1F;
+  transition: 0.3s ease;
+}
+
+#buyBtn:hover{
+  color:#030E1F;
+  border: 2px solid #030E1F;
+  background-color: #FDFDFD;
+}
+
+.bigRectangle{
+  background-color: #030E1F;
+  height: 100%;
+  width: auto;
+  aspect-ratio: 500/880;
+  border-radius: 100px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.cuImg{
+  aspect-ratio: 635/784;
+  border-radius: 100px;
+  border: 10px solid #FDFDFD;
+  background-image: url(../source/homeImg.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 89%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.reclama{
+  margin-top: 11.3vh;
+}
+
+.header{
+  padding: 0 7.81vw;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header img{
+  width: 44.7vw;
+}
+
+.header p{
+  width: 44vw;
+  text-align: center;
+}
+
+.scroool{
+  margin-top: 5.1vh;
+  height: 300vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.scroool div{
+  height: 100vh;
+  width: 100%;
+  padding: 10.3vh 5.2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#l1, #r1, #l2, #r2, #l3, #r3{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+} 
+
+#l1{
+  background-image: url(../source/fCuN.webp);
+}
+
+#r1{
+  background-image: url(../source/newStyleBoots.webp);
+}
+
+#l2{
+  background-image: url(../source/BlackB.webp);
+}
+
+#r2{
+  background-image: url(../source/fCuB.webp);
+}
+
+#l3{
+  background-image: url(../source/fCuP.webp);
+}
+
+#r3{
+  background-image: url(../source/podkraduli.webp);
+}
+
+.textForSq{
+  font-weight: 700;
+  font-size: 2.3rem;
+  line-height: 5.2vh;
+  color: #FDFDFD;
+}
+
+#l1 img, #r2 img, #l3 img{
+  width: 50px;
+  cursor: pointer;
+}
+
+#susT{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+
+.inutil{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#susT p{
+  font-weight: 800;
+  font-size: 1.77rem;
+  color: #030E1F;
+  line-height: 4.2vh;
+  margin: 0;
+}
+
+#susT span{
+  font-weight: 500;
+  font-size: 2.3rem;
+  margin-top: 2.4vh;
+  color: #030E1F;
+}
+
+.toRight{
+  text-align: right;
+}
+
+@media (max-width: 430px) {
+  .right{
+    display: none;
+  }
+
+  .left img{
+    width: 334px;
+  }
+
+  .left p{
+    width: 340px;
+  }
+
+  #buyBtn{
+    padding: 2.57vh 80px;
+    margin-left: 5%;
+  }
+
+  .start{
+    padding: 50px 25px;
+    height: 500px;
+  }
+
+  .inutil{
+    height: 500px;
+  }
+
+  .header img{
+    width: 100%;
+  }
+
+  .header p{
+    width: 100%;
+  }
+
+  .scroool{
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
+}

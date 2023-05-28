@@ -1,0 +1,132 @@
+main{
+  display: grid;
+  grid-template-columns: 66.1% 1fr;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1{
+  font-size: 4rem;
+  color: #FDFDFD;
+}
+
+.parteaS{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.dinStinga{
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 10.3vh 3.9vw;
+  display: flex;
+  align-items: flex-end;
+}
+
+.dinStinga{
+  background-image: url(../source/logbg1.webp);
+}
+
+#toLeftArrow{
+  z-index: 10;
+  position: absolute;
+  bottom: 5vh;
+  right: 185px;
+  transform: rotate(-180deg);
+  cursor: pointer;
+}
+
+#toRightArrow{
+  z-index: 10;
+  position: absolute;
+  bottom: 5vh;
+  right: 75px;
+  cursor: pointer;
+}
+
+.parteaD{
+  padding: 10.8vh 3.8vw;
+}
+
+.parteaD img{
+  width: 100%;
+}
+
+.parteaD p{
+  font-weight: 500;
+  margin-bottom: 10.3vh;
+}
+
+.parteaD p a{
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.parteaD input{
+  margin-top: 0.5vh;
+  margin-bottom: 2.57vh;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  height: 7.4vh;
+  border: 1px solid #030E1F;
+  border-radius: 10px;
+}
+
+.parteaD input::placeholder{
+  color: #030E1F;
+  padding-left: 1.3vw;
+}
+
+.parteaD div{
+  text-decoration: underline;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 4.5vh;
+}
+
+#connectBtn{
+  color: #EAD512;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: #030E1F;
+  height: 7.2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+#connectBtn a{
+  font-weight: 700;
+  color: #EAD512;
+  text-decoration: none;
+}
+
+#connectBtn:hover{
+  border: 1px solid #030E1F;
+  background-color: #FDFDFD;
+  color: #030E1F;
+}
+
+#connectBtn:hover a{
+  color: #030E1F;
+}
+
+@media (max-width: 430px){
+  main{
+    grid-template-columns: 1fr;
+  }
+
+  .parteaS{
+    display: none;
+  }
+}

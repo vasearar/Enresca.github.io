@@ -1,0 +1,300 @@
+*{
+  box-sizing: border-box;
+}
+html {
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  margin: 0;
+  background-color: #FDFDFD;
+  overflow-x: hidden;
+  color: #030E1F;
+}
+
+.body{
+  width: 100vw;
+  overflow-x: hidden;
+  position: relative;
+}
+
+@media (min-width: 1536px){
+  html{
+    font-size: 18px;
+  }
+}
+
+@media(min-width: 2000px){
+  html{
+    font-size: 20px;
+  }
+}
+
+a{
+  text-decoration: none;
+  color: #030E1F;
+}
+
+ul{
+  list-style-type : none;
+}
+
+header{
+  padding: 0 7.81vw;
+  width: 100vw;
+  top: 0;
+  position: absolute;
+  z-index: 10;
+}
+
+nav{
+  margin-top: 3vh;
+  width: 100%;
+  position: relative;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-weight: 700;
+}
+
+.pentruNavigare{
+  white-space: nowrap;
+  display: flex;
+  gap: 2.6vw;
+  line-height: 2.2vh;
+}
+
+.logAndBag{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-self: end;
+  gap: 10px;
+}
+
+.logAndBag img{
+  cursor: pointer;
+}
+
+.underline{
+  text-decoration: underline;
+  text-decoration-color: #EAD512;
+  text-decoration-thickness: 2px;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 4px;
+}
+
+.burger{
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  display: none;
+  z-index: 3;
+}
+
+.burger.active .line-top{
+  transform: translate(6px, 8px) rotate(45deg);
+  background-color: #FDFDFD;
+}
+
+.burger.active .line-mid{
+  opacity: 0;
+  transform: translateX(-3000px);
+  background-color: #FDFDFD;
+}
+.burger.active .line-bottom{
+  transform: translate(6px, -6px) rotate(-45deg);
+  background-color: #FDFDFD;
+}
+
+.line-top, .line-mid, .line-bottom{
+  width: 30px;
+  height: 3px;
+  background-color: #030E1F;
+  transform-origin: center;
+  transition: transform 1s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.mobileNav{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: #030E1F;
+  padding: 50px;
+  display: none;
+}
+
+.mobileNav ul{
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+
+.mobileNav ul li a{
+  color: #FDFDFD;
+  font-weight: 700;
+  font-size: 2.1rem;
+}
+
+.destroy{
+  display: none;
+  height: 0;
+}
+
+.appear{
+  display: flex;
+}
+
+.dissapear{
+  opacity: 0;
+}
+
+.connect{
+  padding: 2vh 1vw;
+  border: 2px solid #030E1F;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+
+.blockY{
+  height: 100vh;
+}
+
+.mobileNav li p{
+  color: #FDFDFD;
+}
+
+footer{
+  background-color: #030E1F;
+  color: #FDFDFD;
+  position: relative;
+  padding: 10.3vh 7.81vw 2.5vh;
+}
+
+.pentruPc{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.footerBottom{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footerBottom div ul li a{
+  color: #FDFDFD;
+}
+
+.footerBottom div ul{
+  padding: 0;
+}
+
+.allLinks{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footerTop{
+  font-weight: 700;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  border-bottom: 2px solid #FDFDFD;
+}
+
+.footerTop div{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.pentruMob{
+  display: none;
+  flex-direction: column;
+}
+
+.pentruMob div a{
+  color: #FDFDFD;
+  font-size: 1.3rem;
+}
+
+.pentruMob div a:last-child{
+  padding-bottom: 5px;
+  border-bottom: 2px solid #FDFDFD;
+}
+
+.pentruMob div:last-child a:last-child{
+  border: none;
+}
+
+.pentruMob div{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.pentruMob div strong{
+  margin: 2.5vh 0;
+  font-size: 1.3rem;
+}
+
+.footerLogo{
+  width: 100%;
+  border-bottom: 2px solid #FDFDFD;
+  display: flex;
+  justify-content: center;
+}
+
+.footerLogo img{
+  transform: translateX(50%);
+  width: 50%;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 1280px){
+  nav{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pentruNavigare, .logAndBag{
+    display: none;
+  }
+
+  .burger{
+    display: flex;
+  }
+}
+
+@media (max-width: 1024px){
+  .pentruPc{
+    display: none;
+  }
+
+  .footerTop{
+    grid-template-columns: 33% 1fr;
+  }
+
+  .footerBottom{
+    grid-template-columns: 33% 1fr;
+  }
+
+  .pentruMob{
+    display: flex;
+  }
+}
+
+main{
+  position: relative;
+}
+
+/* -------------------- */

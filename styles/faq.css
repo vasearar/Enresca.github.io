@@ -1,0 +1,66 @@
+main{
+  padding: 20vh 7.81vw 10vh;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 54% 1fr;
+}
+
+.bgLeft{
+  background-image: url(../source/faqBG.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.content{
+  padding: 0 5.2vw;
+  height: 100%;
+  width: 100%;
+}
+
+.content img{
+  width: 100%;
+}
+
+.intrebari{
+  color: #030E1F;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 4.6vh;
+}
+
+.titlu{
+  font-size: 1.3rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titlu p{
+  margin: 0;
+}
+
+.forChange{
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.dece-text{
+  font-weight: 500;
+  display: none;
+  margin-top: 1.3vh;
+}
+
+@media (max-width: 430px){
+  main{
+    grid-template-columns: 1fr;
+  }
+
+  .bgLeft{
+    display: none;
+  }
+}
